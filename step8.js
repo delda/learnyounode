@@ -15,7 +15,6 @@ var testUrl = function (options, callback) {
             callback('Status code' + res.statusCode)
         }
 
-        var bodyChunks = []
         res.setEncoding('utf8')
         res.pipe(bl(function(error, data){
             if (error) {
